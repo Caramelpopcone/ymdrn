@@ -1,0 +1,454 @@
+@charset "UTF-8";
+
+html {
+ font-size: 100%;
+}
+body {
+  font-family: "serif", "Meiryo", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #1d1d1f;
+}
+a {
+  color: #06c;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  max-width: 980px;
+  padding: 0 22px;
+  margin: 0 auto;
+}
+.link-more {
+  font-size: 14px;
+  position: relative;
+}
+.link-more::after {
+  position: absolute;
+  top: 54%;
+  right: -12px;
+  width: 7px;
+  height: 7px;
+  transform: translateY(-50%) rotate(45deg);
+  border-right: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  content: "";
+}
+.link-more:hover {
+  text-decoration: underline;
+}
+
+/*-------------------------------------------
+メイン
+-------------------------------------------*/
+
+#main {
+  padding-top: 44px;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+
+#header {
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  z-index: 10;
+}
+
+#header .header-inner {
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+#header .header-inner .logo {
+  flex-shrink: 0;
+  width: 16px;
+  line-height: 1px;
+  margin-right: 9%;
+}
+
+#navi {
+  width: 100%;
+}
+
+#navi ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navi a {
+  height: 44px;
+  line-height: 44px;
+  display: inline-block;
+  color: #f5f5f7;
+  font-size: 14px;
+  padding: 0 10px;
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+
+#navi a:hover {
+  opacity: 1;
+}
+.hamburger {
+ display: none;
+}
+
+
+/*-------------------------------------------
+TID
+-------------------------------------------*/
+
+#TID {
+  background-image: url(img/TID_back.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 850px;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+#TID .headline {
+  color: #f5f5f7;
+  font-size: 56px;
+  font-weight: bold;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: serif;
+}
+
+
+
+
+/*-------------------------------------------
+レスポンシブ
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  #TID {
+    background-image: url(img/TID_back.jpg);
+  }
+  #TID .headline {
+    font-size: 32px;
+  }
+  #TID .subhead {
+    font-size: 19px;
+    top: 88px;
+  }
+}
+
+/*-------------------------------------------
+DORM
+-------------------------------------------*/
+
+#DORM {
+  margin-bottom: 80px;
+}
+
+#DORM {
+  background-image: url(img/ao.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  margin-bottom: 45px;
+  position: relative;
+}
+/*
+#DORM img {
+  width: 100%;
+  max-width: 1920px;
+  height: 500px;
+  object-fit: cover;
+}*/
+
+#DORM .headline {
+  font-size: 78px;
+  font-weight: bold;
+  text-align: center;
+  padding:50px 0;
+  margin-bottom: 40px;
+  font-family: serif;
+  color: white;
+}
+
+#DORM .subhead {
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+  /*padding:50px 0;*/
+  margin-bottom: 40px;
+  font-family: serif;
+  color: white;
+}
+
+/*-------------------------------------------
+レスポンシブ
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  #DORM {
+    background-image: url(img/ao.jpg);
+  }
+  #DORM .headline {
+    font-size: 32px;
+  }
+
+  #DORM .subhead {
+    font-size: 24px;
+  }
+}
+
+/*-------------------------------------------
+Compare
+-------------------------------------------*/
+
+#compare {
+  margin-bottom: 80px;
+}
+
+#compare .headline {
+  font-size: 48px;
+  padding:50px 0;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#compare .models {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#compare .models:hover {
+  text-decoration: underline;
+}
+#compare img {
+
+
+  height: 300px;
+  object-fit: cover;
+  max-width: 767px
+}
+
+#compare .compare-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+#compare .item {
+  padding: 20px;
+}
+
+#compare .item li {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#compare .item .item-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/*-------------------------------------------
+レスポンシブ
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  #compare .headline {
+    font-size: 32px;
+  }
+  #compare .models {
+    font-size: 21px;
+  }
+  #compare .compare-list {
+    flex-wrap: wrap;
+  }
+  #compare .item {
+    width: 50%;
+    padding: 10px;
+  }
+  #compare .item .item-title {
+    font-size: 19px;
+  }
+}
+
+/*-------------------------------------------
+Collection
+-------------------------------------------*/
+
+#collection {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 12px;
+}
+
+#collection .ABOUT {
+  background-image: url(img/TID_kitchen.jpg);
+}
+
+#collection .NEWS {
+  background-image: url(img/TID_bath.jpg);
+}
+
+#collection .Organization {
+  background-image: url(img/TID_lounge.jpg);
+}
+
+#collection .Graduated_Member {
+  background-image: url(img/TID_cafe.jpg);
+}
+
+#collection .item {
+  background-size: cover;
+  background-position: center;
+  height: 520px;
+  position: relative;
+}
+
+#collection .item .copy {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#collection  {
+  color: #fff;
+}
+
+#collection .item .headline {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+#collection .item .subhead {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+/*-------------------------------------------
+レスポンシブ
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  #collection {
+    grid-template-columns: 1fr;
+  }
+  #collection .item .headline {
+    font-size: 32px;
+  }
+  #collection .item .subhead {
+    font-size: 19px;
+  }
+}
+
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+
+#footer {
+  width: 100%;
+  background-color: #f5f5f7;
+  color: #86868b;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+#footer .text-area {
+  border-bottom: 1px solid #d2d2d7;
+}
+
+#footer .text-area p {
+  margin-bottom: 20px;
+}
+
+#footer .footer-menu {
+  display: flex;
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+#footer .footer-menu .menu {
+  width: 25%;
+}
+
+#footer .footer-menu .title {
+  color: #1d1d1f;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#footer .footer-menu li {
+  margin-top: 10px;
+}
+
+#footer .footer-menu a {
+  color: #86868b;
+}
+
+#footer .footer-menu a:hover {
+  text-decoration: underline;
+}
+
+#footer .copyright {
+  font-size: 12px;
+}
+
+/*-------------------------------------------
+レスポンシブ
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  #footer .footer-menu {
+    flex-wrap: wrap;
+  }
+  #footer .footer-menu .menu {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hamburger {
+    width: 44px;
+    height: 44px;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 8px;
+    z-index: 20;
+    cursor: pointer;
+  }
+  .hamburger span {
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 14px;
+    transition: 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 18px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 26px;
+  }
+
+ ・
+ ・
+ ・
+
+}
+.hamburger
