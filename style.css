@@ -107,7 +107,7 @@ TID
 -------------------------------------------*/
 
 #TID {
-  background-image: url(img/TID_back.jpg);
+  background-image: url(TID_back.jpg);
   background-size: cover;
   background-position: center;
   height: 850px;
@@ -135,7 +135,7 @@ TID
 -------------------------------------------*/
 @media screen and (max-width: 767px) {
   #TID {
-    background-image: url(img/TID_back.jpg);
+    background-image: url(TID_back.jpg);
   }
   #TID .headline {
     font-size: 32px;
@@ -155,7 +155,7 @@ DORM
 }
 
 #DORM {
-  background-image: url(img/ao.jpg);
+  background-image: url(ao.jpg);
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -294,11 +294,11 @@ Collection
 }
 
 #collection .ABOUT {
-  background-image: url(img/TID_kitchen.jpg);
+  background-image: url(TID_kitchen.jpg);
 }
 
 #collection .NEWS {
-  background-image: url(img/TID_bath.jpg);
+  background-image: url(TID_bath.jpg);
 }
 
 #collection .Organization {
